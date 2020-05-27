@@ -1,0 +1,19 @@
+>>> import sys
+>>> sys.version
+'3.6.5 (v3.6.5:f59c0932b4, Mar 28 2018, 16:07:46) [MSC v.1900 32 bit (Intel)]'
+>>> 
+>>> 
+>>> import sys
+>>> inputStatement = sys.stdin.readline()
+Sandeep is a great person in the world!
+>>> inputStatement
+'Sandeep is a great person in the world!\n'
+>>> inputStatement = sys.stdin.readline(10)
+this is man who knows everythhings!
+>>> inputStatement
+'this is ma'
+>>> 
+>>> 
+>>> sys.stdout.write("This girl is is awesome girl in the world")
+This girl is is awesome girl in the world41
+>>>
