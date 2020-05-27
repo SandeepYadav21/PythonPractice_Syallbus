@@ -1,0 +1,22 @@
+>>> t.reset()
+>>> t.left(180)
+>>> t.forward(100)
+>>> t.right(180)
+>>> for i in range(1,20):
+	t.forward(100)
+	t.left(95)
+
+	
+>>> t.up()
+>>> t.forward(100)
+>>> t.forward(40)
+>>> for i in range(1,20):
+	t.forward(100)
+	t.left(95)
+
+	
+t.do
+>>> t.down()
+>>> for i in range(1,20):
+	t.forward(100)
+	t.left(95)
