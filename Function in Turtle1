@@ -1,0 +1,21 @@
+>>> import turtle
+>>> t = turtle.Pen()
+>>> def square(side):
+	for i in range(0,5):
+		t.forward(side)
+		t.left(90)
+
+		
+>>> square(10)
+>>> square(20)
+>>> square(50)
+
+
+>>> def circle(radius):
+	t.circle(radius)
+
+	
+>>> circle(10)
+>>> circle(50)
+>>> circle(100)
+>>> 
