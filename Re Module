@@ -1,0 +1,37 @@
+Example1:----
+
+>>> import re
+>>> dir(re)
+['A', 'ASCII', 'DEBUG', 'DOTALL', 'I', 'IGNORECASE', 'L', 'LOCALE', 'M', 'MULTILINE', 'RegexFlag', 'S', 'Scanner', 'T', 'TEMPLATE', 'U', 'UNICODE', 'VERBOSE', 'X', '_MAXCACHE', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__spec__', '__version__', '_alphanum_bytes', '_alphanum_str', '_cache', '_compile', '_compile_repl', '_expand', '_locale', '_pattern_type', '_pickle', '_subx', 'compile', 'copyreg', 'enum', 'error', 'escape', 'findall', 'finditer', 'fullmatch', 'functools', 'match', 'purge', 'search', 'split', 'sre_compile', 'sre_parse', 'sub', 'subn', 'template']
+>>> string = "The night was cold and dark"
+>>> re.search("night",string)
+<_sre.SRE_Match object; span=(4, 9), match='night'>
+>>> m = re.search("night",string)
+>>> print(m)
+<_sre.SRE_Match object; span=(4, 9), match='night'>
+>>> start = m.start()
+>>> end = start+5
+>>> print(start)
+4
+>>> print(end)
+9
+>>> string[start:end]
+'night'
+>>> print(m.end())
+9
+
+
+
+Example2:------
+
+>>> string2 = "dvsv sandeep kjdjksbsdvbbb njkndvjkkjsdvn"
+>>> re.search("sandeep",string2)
+<_sre.SRE_Match object; span=(5, 12), match='sandeep'>
+>>> position = re.search("sandeep",string2)
+>>> position.start()
+5
+>>> position.end()
+12
+>>> string2[position.start():position.end()]
+'sandeep'
+>>>
