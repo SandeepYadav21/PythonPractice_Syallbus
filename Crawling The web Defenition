@@ -1,6 +1,6 @@
-    import re
-    import urllib.request
-
+import re
+import urllib.request
+try:
     url = "https://www.dictionary.com/browse/"
 
     word = input("Enter your word: ")
