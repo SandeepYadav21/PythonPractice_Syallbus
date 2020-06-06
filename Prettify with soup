@@ -1,0 +1,25 @@
+>>> import requests
+
+>>> from bs4 import BeautifulSoup
+
+>>> soup = BeautifulSoup("<html><p>asjhkajkj<strong>Hello<a>Hello</html>")
+>>> soup.prettify()
+'<html>\n <p>\n  asjhkajkj\n  <strong>\n   Hello\n   <a>\n    Hello\n   </a>\n  </strong>\n </p>\n</html>'
+>>> soup = BeautifulSoup("<html><p>asjhkajkj<strong>Hello<a>Hello</html>","html.parser")
+>>> soup.prettify()
+'<html>\n <p>\n  asjhkajkj\n  <strong>\n   Hello\n   <a>\n    Hello\n   </a>\n  </strong>\n </p>\n</html>'
+>>> print(soup.prettify())
+<html>
+ <p>
+  asjhkajkj
+  <strong>
+   Hello
+   <a>
+    Hello
+   </a>
+  </strong>
+ </p>
+</html>
+>>> soup
+<html><p>asjhkajkj<strong>Hello<a>Hello</a></strong></p></html>
+>>> 
