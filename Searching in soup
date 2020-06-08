@@ -1,0 +1,47 @@
+>>> soup.find_all('p')
+ 
+[<p class="title"><b>The Dormouse's story</b></p>, <p class="title">Once upon a time there were three little sisters;and their names were
+<p class="sister" href="http://example.com/elsie" id="link1">Elsie</p></p>, <p class="sister" href="http://example.com/elsie" id="link1">Elsie</p>, <p class="sister" href="http://example.com/lacie" id="link2">Lacie</p>, <p class="sister" href="http://example.com/tillie" id="link3">Tillie</p>, <p class="story">...</p>]
+>>> soup.find_all('a')
+ 
+[]
+>>> soup.find_all('id=link2')
+ 
+[]
+>>> soup.find_all(id='link2')
+ 
+[<p class="sister" href="http://example.com/lacie" id="link2">Lacie</p>]
+
+
+
+>>>  import re
+>>> for tag in soup.find_all(re.compile("^b")):
+         print(tag.name)
+
+ 
+body
+b
+>>> for tag in soup.find_all(re.compile("t")):
+         print(tag.name)
+
+ 
+html
+title
+
+>>> soup.find_all('title')
+ 
+[<title>The Dormouse's story</title>]
+>>> soup.find_all(href=re.compile('elsie'))
+ 
+[<p class="sister" href="http://example.com/elsie" id="link1">Elsie</p>]
+>>> soup.find_all(href=re.compile('elsie'),id="link1")
+
+>>> for tag in soup.find_all(re.compile("^b")):
+ print(tag)
+
+ 
+<body>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="title">Once upon a time there were three little sisters;and their names were
+<p class="sister" href="http://example.com/elsie" id="link1">Elsie</p></p></body>
+<b>The Dormouse's story</b>
