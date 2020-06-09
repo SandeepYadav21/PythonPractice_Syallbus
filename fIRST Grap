@@ -1,0 +1,11 @@
+C:\>pip install matplotlib
+
+C:\>python
+Python 3.7.1 (default, Dec 10 2018, 22:54:23) [MSC v.1915 64 bit (AMD64)] :: Anaconda, Inc. on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import matplotlib
+>>> import matplotlib.pyplot as pt
+>>> pt.plot([1,2,3,4],[3,8,10,25])
+[<matplotlib.lines.Line2D object at 0x000001E42655FCF8>]
+>>> pt.show()
+
