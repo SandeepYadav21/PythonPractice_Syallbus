@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+
+sizes=[50,15,15,20]
+labels=['Android','Apple','Windows','Blackberry']
+colors=["yellow","orange","cyan","Magenta"]
+
+plt.pie(sizes,colors=colors,startangle=90,labels=labels)
+plt.title('Pie Chart')
+plt.legend(title='Legend')
+
+plt.axis('equal')
+
+plt.show()
