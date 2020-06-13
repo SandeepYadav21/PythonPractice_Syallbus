@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+pos =np.arange(6)+0.5
+
+names=['Avi',"Millu",'san','Nick',"Zelda","Matt"]
+
+plt.barh(pos,(4,8,12,3,17,6),align='center',color='red')
+
+plt.xlabel('Height in Inches',color="Red")
+plt.ylabel('Students',color='Red')
+plt.title('Height of Students in Inches',color='blue')
+
+plt.tick_params(axis='x',colors='black')
+plt.tick_params(axis='y',colors='black')
+
+plt.subplots_adjust(left=.11,bottom=.12,right=.94)
+
+plt.yticks(pos,names)
+
+plt.show()
+ 
