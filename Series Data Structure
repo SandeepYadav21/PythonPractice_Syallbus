@@ -1,0 +1,40 @@
+>>> import pandas
+>>> import pandas as pd
+>>> s=pd.Series([10,"Sandeep",23.22,"Yadav"])
+>>> s
+0         10
+1    Sandeep
+2      23.22
+3      Yadav
+dtype: object
+>>> s[0]
+10
+>>> s[1]
+'Sandeep'
+>>> s=pd.Series([10,"Namaste",23.5,"Hello"],index=["a","b","c","d"])
+>>> s
+a         10
+b    Namaste
+c       23.5
+d      Hello
+dtype: object
+>>> s["a"]
+10
+>>> s=pd.Series()
+>>> d={"Seattle":1000000,"San Francisco":5000000,"San Jose":1500000}
+>>> cities=pd.Series(d)
+>>> cities
+Seattle          1000000
+San Francisco    5000000
+San Jose         1500000
+dtype: int64
+>>> cities["Seattle"]
+1000000
+>>> cities[cities>1000000]
+San Francisco    5000000
+San Jose         1500000
+dtype: int64
+>>> cities[cities==1000000]
+Seattle    1000000
+dtype: int64
+>>>
