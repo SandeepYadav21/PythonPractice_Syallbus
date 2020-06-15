@@ -38,3 +38,73 @@ dtype: int64
 Seattle    1000000
 dtype: int64
 >>>
+
+>>> d={"Seattle":100,"San Francisco":500,"San Jose":150,"London":1200,"Tokyo":1600}
+>>> cities=pd.Series(d)
+>>> cities
+Seattle           100
+San Francisco     500
+San Jose          150
+London           1200
+Tokyo            1600
+dtype: int64
+>>> cities<1000
+Seattle           True
+San Francisco     True
+San Jose          True
+London           False
+Tokyo            False
+dtype: bool
+>>> d={"Seattle":100,"San Francisco":500,"San Jose":150,"London":1200,"Tokyo":1600}
+>>> cities=pd.Series(d)
+>>> cities
+Seattle           100
+San Francisco     500
+San Jose          150
+London           1200
+Tokyo            1600
+dtype: int64
+>>> cities["San Francisco"]=600
+>>>
+>>> cities
+Seattle           100
+San Francisco     600
+San Jose          150
+London           1200
+Tokyo            1600
+dtype: int64
+>>> cities[cities<1000]=750
+>>> cities
+Seattle           750
+San Francisco     750
+San Jose          750
+London           1200
+Tokyo            1600
+dtype: int64
+>>> print('Seattle'in cities)
+True
+>>> print('delhi'in cities)
+False
+>>> cities/10
+Seattle           75.0
+San Francisco     75.0
+San Jose          75.0
+London           120.0
+Tokyo            160.0
+dtype: float64
+>>> import numpy as np
+>>> np.square(cities)
+Seattle           562500
+San Francisco     562500
+San Jose          562500
+London           1440000
+Tokyo            2560000
+dtype: int64
+>>> cities.isnull()
+Seattle          False
+San Francisco    False
+San Jose         False
+London           False
+Tokyo            False
+dtype: bool
+>>>
