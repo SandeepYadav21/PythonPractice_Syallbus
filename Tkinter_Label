@@ -1,0 +1,13 @@
+First install:-
+
+pip install Tkinter
+
+example:-
+
+>>> from tkinter import*
+>>> root = Tk()
+>>> theLabel=Label(root,text="This is our Tkinter window")
+>>> theLabel.pack()
+>>> theLabel2=Label(root,text="This is our Tkinter window")
+>>> theLabel2.pack()
+>>> root.mainloop()
