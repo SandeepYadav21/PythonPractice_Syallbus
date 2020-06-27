@@ -1,0 +1,25 @@
+from tkinter import*
+
+root = Tk()
+
+def printName():
+    print("Hello there Sandeep")
+    
+button1=Button(root,text="Click me!",command=printName)
+
+button1.pack()
+
+root.mainloop()
+
+
+output:----
+
+============== RESTART: C:/Users/Sandeeep Yadav/Desktop/Python/ButtonAction.py =============
+Hello there Sandeep
+Hello there Sandeep
+Hello there Sandeep
+Hello there Sandeep
+Hello there Sandeep
+Hello there Sandeep
+Hello there Sandeep
+Hello there Sandeep
