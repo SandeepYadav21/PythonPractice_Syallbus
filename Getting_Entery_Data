@@ -1,0 +1,23 @@
+from tkinter import*
+
+root=Tk()
+
+def evaluate(event):
+    data = e.get()
+    ans.configure(text="Answer:"+str(eval(data)))
+
+e = Entry(root)
+
+e.bind("<Return>",evaluate)
+e.pack()
+
+ans = Label(root)
+ans.pack()
+
+root.mainloop()
+
+
+output:-----
+
+21+21/2*6-2
+   Answer:82.0
